@@ -1,0 +1,39 @@
+JAVASCRIPT
+Data Types
+  -Numbers
+    -whole numbners
+    -floating
+    -prime numbers
+  -Strings
+  -Boolean
+    -true
+    -false
+  -Null
+  -Array
+  -Object
+  -Date
+  -Variables
+
+Operators
+  -Arithematic
+    -addition  +
+    -multiplication  *
+    -division  /
+    -subtraction  -
+    -modlus/ modulo  %
+  -Comparision
+    -greater than or equal to  >=
+    -less than or equal to  <=
+    -greater than  >
+    -less than  <
+
+Functions
+   -Categories
+    -paramaterized
+    -non paramaterized
+    -named
+    -annonymous
+    -High Oder Functions
+      PS. Functions are first class citizens in Js
+
+Javascript is case sensitive and use the unicode character set

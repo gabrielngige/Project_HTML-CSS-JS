@@ -1,0 +1,51 @@
+/*This is a css file for styling my personal webpage. It includes styles for the body, header, navigation menu, and main content area. 
+The colors and fonts are chosen to create a clean and modern look. The layout is responsive, ensuring that the webpage looks good on both desktop and mobile devices.*/
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0; /*
+  padding: 0;
+  background-color: #ffffff; /* White background */
+  color: #333;
+}   
+/* Header Styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+/* Navigation Menu Styles */
+nav {
+  background-color: #444;
+  overflow: hidden;
+}   
+nav a {
+  float: left;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+/* Main Content Styles */
+main {
+  padding: 20px;
+}   
+main h1 {
+  color: #333;
+}
+main p {
+  line-height: 1.6;
+}   
+/* Responsive Design */
+@media (max-width: 600px) {
+  nav a {
+    float: none;
+    width: 100%;
+  }
+}   
