@@ -1,0 +1,113 @@
+<!-- building a personal website using HTML, CSS, and JavaScript -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gabriel Ngige | Personal Website</title>
+  <link rel="stylesheet" href="projectstyle.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container navbar">
+      <a class="brand" href="#home">Gabriel Ngige</a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container text-center">
+        <h1>Welcome to my personal website</h1>
+        <p>I’m Gabriel Ngige, a Software Engineer who loves building clean, modern web apps with JavaScript and CSS.</p>
+        <a class="btn btn-primary" href="#contact">Get in Touch</a>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="grid-3">
+          <div class="card">
+            <h3>Gabriel Ngige</h3>
+            <p>I am a Software Engineer with a passion for coding, problem-solving, and creating useful applications.</p>
+          </div>
+          <div class="card">
+            <h3>Skills</h3>
+            <ul>
+              <li>HTML / CSS / JavaScript</li>
+              <li>React / Node.js</li>
+              <li>REST APIs, Git, Agile</li>
+              <li>Java / python </li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Values</h3>
+            <p>Clean code, strong UX, and steady learning are at the core of my development approach.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="grid-3">
+          <article class="card">
+            <h3>Fire Island Adventure</h3>
+            <p>A static site project demo with responsive layout and interactive components.</p>
+            <a class="nav-link" href="webpage_assignment.html" target="_blank" rel="noopener">View this project</a>
+          </article>
+          <article class="card">
+            <h3>Open-Source Contributions</h3>
+            <p>Improvements to shared libraries and 1:1 support in GitHub issues.</p>
+            <a class="nav-link" href="https://github.com/gabrielngige" target="_blank" rel="noopener">GitHub</a>
+          </article>
+          <article class="card">
+            <h3>API-driven Utility</h3>
+            <p>Tool for currency conversion and financial calculations (React/Node).</p>
+            <a class="nav-link" href="orchestratepayplatform/forex_calculator" target="_blank" rel="noopener">Open calculator</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title">Contact Me</h2>
+        <p>If you’d like to connect, send an email or reach out via social media.</p>
+        <p>Email: <a href="mailto:gabrielngige222@gmail.com">gabrielngige222@gmail.com</a></p>
+        <p>Phone: +254 705 247 219</p>
+        <p>
+          Follow me:
+          <a class="nav-link" href="https://www.instagram.com/_G.ab.rie.l_" target="_blank" rel="noopener">Instagram</a>
+          <a class="nav-link" href="https://github.com/gabrielngige" target="_blank" rel="noopener">GitHub</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <p>&copy; <span id="year"></span> Gabriel Ngige. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="Project.js"></script>
+  <script>
+    console.log('Welcome to my personal website!');
+    function showAlert() {
+      alert('Thank you for visiting my website!');
+    }
+    window.onload = function () {
+      var year = new Date().getFullYear();
+      document.getElementById('year').textContent = year;
+      showAlert();
+    };
+  </script>
+</body>
+</html>
