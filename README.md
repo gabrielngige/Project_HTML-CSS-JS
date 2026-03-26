@@ -2,7 +2,7 @@
 
 A modern, interactive personal website showcasing my software engineering projects with user authentication, real-time chat, and collaboration features.
 
-## 🚀 Features
+Features
 
 ### Core Website
 - **Responsive Design**: Clean, modern UI built with HTML, CSS, and JavaScript
@@ -25,7 +25,7 @@ A modern, interactive personal website showcasing my software engineering projec
 - **Email Notifications**: Automated welcome emails using Nodemailer
 - **Session Management**: Persistent user sessions with JWT tokens
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Frontend
 - HTML5
@@ -41,13 +41,13 @@ A modern, interactive personal website showcasing my software engineering projec
 - Nodemailer
 - Socket.io
 
-## 📋 Prerequisites
+## Prerequisites
 
 - Node.js (v14 or higher)
 - MongoDB (running locally or remote instance)
 - Gmail account (for email notifications)
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 1. Clone and Install
 ```bash
@@ -77,7 +77,7 @@ npm start
 
 The website will be available at `http://localhost:3001`
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 Project_HTML-CSS-JS/
@@ -95,7 +95,7 @@ Project_HTML-CSS-JS/
     └── ...
 ```
 
-## 🔐 Authentication Flow
+## Authentication Flow
 
 1. **User Visits**: Access the website at `http://localhost:3001`
 2. **Project Access**: Click on any project link
@@ -104,20 +104,20 @@ Project_HTML-CSS-JS/
 5. **Email Confirmation**: Automated welcome email sent
 6. **Access Granted**: User can now view projects and use chat
 
-## 💬 Chat System
+## Chat System
 
 - **Real-time Communication**: Instant messaging using WebSockets
 - **Persistent Sessions**: Chat history maintained during navigation
 - **Simple Interface**: Fixed-position chatbox in bottom-right corner
 
-## 📧 Email Configuration
+## Email Configuration
 
 For email notifications to work:
 1. Enable 2-factor authentication on your Gmail account
 2. Generate an App Password: [Google App Passwords](https://support.google.com/accounts/answer/185833)
 3. Use the App Password in the `EMAIL_PASS` environment variable
 
-## 🔧 Development
+## Development
 
 ### Available Scripts
 - `npm start` - Start the production server
@@ -129,7 +129,7 @@ For email notifications to work:
 - `GET /api/projects` - Get protected project list
 - `WebSocket` - Real-time chat events
 
-## 🤝 Collaboration
+## Collaboration
 
 This website serves as a hub for:
 - Showcasing my GitHub projects
@@ -137,11 +137,11 @@ This website serves as a hub for:
 - Real-time discussion of ongoing projects
 - Professional networking
 
-## 📄 License
+## License
 
 This project is open source and available under the [MIT License](LICENSE).
 
-## 📞 Contact
+## Contact
 
 **Gabriel Ngige**
 - Email: gabrielngige222@gmail.com
@@ -151,4 +151,4 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-Built with ❤️ by Gabriel Ngige
+Built by Gabriel Ngige
