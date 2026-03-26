@@ -54,25 +54,19 @@ loginForm.addEventListener('submit', async (e) => {
   const phone = document.getElementById('phone').value;
   const email = document.getElementById('email').value;
 
-  try {
-    const response = await fetch('/api/signup', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ fullName, phone, email })
-    });
-    const data = await response.json();
-    if (response.ok) {
-      localStorage.setItem('token', data.token);
-      loginMessage.textContent = 'Login successful!';
-      modal.style.display = 'none';
-      // Redirect or refresh
-      location.reload();
-    } else {
-      loginMessage.textContent = data.error;
-    }
-  } catch (error) {
-    loginMessage.textContent = 'Error: ' + error.message;
+  if (!fullName || !phone || !email) {
+    loginMessage.textContent = 'All fields are required';
+    return;
   }
+
+  // Simple client-side validation and storage
+  const userData = { fullName, phone, email };
+  localStorage.setItem('user', JSON.stringify(userData));
+  localStorage.setItem('token', 'dummy-token-' + Date.now()); // Dummy token for demo
+
+  loginMessage.textContent = 'Login successful!';
+  modal.style.display = 'none';
+  // No reload, just close modal
 });
 
 // Chat functionality
