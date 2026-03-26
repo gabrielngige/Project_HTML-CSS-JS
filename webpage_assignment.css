@@ -1,0 +1,115 @@
+/*
+This is a CSS file for styling a webpage assignment (webpage_assignment.html).
+It includes styles for body, header, main content, images, and footer.
+The colors and fonts are chosen to create a clean and modern look.
+The layout is responsive for desktop and mobile devices.
+*/
+
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header styles */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c5f2d; /* Dark green */
+    font-size: 2.5em;
+}
+
+/* Hero image */
+img[alt="Scenic view of Fire Island"] {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Paragraph styles */
+p {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+/* Image gallery */
+h2 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #2c5f2d;
+    font-size: 1.8em;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+li {
+    flex: 1 1 300px;
+    max-width: 300px;
+}
+
+li img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+li img:hover {
+    transform: scale(1.05);
+}
+
+/* Call to action */
+a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    h2 {
+        font-size: 1.5em;
+    }
+    
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    li {
+        max-width: 100%;
+    }
+}
+
